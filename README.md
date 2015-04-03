@@ -44,7 +44,7 @@ for doc in results:
 
 ### Saving postgres db data
 
-This will load data in postgres from a `backup.sql` file in the current directory
+This will dump data in postgres into a `backup.sql` file in the current directory
 
 ```
 docker-compose run shell /bin/sh pg_dump.sh
