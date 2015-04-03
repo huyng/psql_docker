@@ -48,7 +48,7 @@ docker-compose run shell /bin/sh pg_dump.sh
 docker-compose run shell /bin/sh pg_load.sh
 ```
 
-### Run example
+### Run example data insertion and query 
 
 `example.py` is a program that will insert fake data into postgres and demonstrate a few queries using the data.
 
