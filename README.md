@@ -4,6 +4,9 @@ Docker + Postgres + Python
 
 ```
 
+# get docker-compose
+pip install -U docker-compose
+
 # start postgres service
 docker-compose up
 
