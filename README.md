@@ -1,4 +1,4 @@
-Docker + Postgres + Python
+Docker + Postgres + Python for fast data exploration and prototyping
 
 ### Setup
 
@@ -56,3 +56,7 @@ docker-compose run shell /bin/sh pg_load.sh
 docker-compose run shell python example.py
 ```
 
+
+### Further references
+
+* Query and inserting data using [Peewee](https://peewee.readthedocs.org/en/latest/peewee/playhouse.html#using-hstore)
