@@ -13,6 +13,14 @@ docker-compose up
 docker-compose run shell /bin/sh pg_init.sh
 ```
 
+### Try example
+
+`example.py` is a program that will insert fake data into postgres and demonstrate a few queries using the data.
+
+```
+docker-compose run shell python example.py
+```
+
 
 ### Interacting with the database
 
@@ -46,13 +54,6 @@ docker-compose run shell /bin/sh pg_dump.sh
 docker-compose run shell /bin/sh pg_load.sh
 ```
 
-### Run example data insertion and query 
-
-`example.py` is a program that will insert fake data into postgres and demonstrate a few queries using the data.
-
-```
-docker-compose run shell python example.py
-```
 
 ### Destroying the postgres database
 
