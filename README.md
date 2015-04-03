@@ -28,7 +28,6 @@ d1 = Doc.create(data={"name":"foobar", food":"chocolate"})
 d2 = Doc.create(data={"name":"barfoo", food":"carrot"})
 
 # query for document(s)
-
 results = Doc.select().where(Doc.data["food"] == "carrot")
 for doc in results:
     print doc.id, doc.data
@@ -53,6 +52,13 @@ docker-compose run shell /bin/sh pg_load.sh
 
 ```
 docker-compose run shell python example.py
+```
+
+### Destroying the postgres database
+
+```
+docker-compose stop pgdb
+docker-compose rm
 ```
 
 

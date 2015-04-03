@@ -11,7 +11,7 @@ def insert_fake_data():
             "name": fake.name(),
             "country": fake.country(),
             "state": fake.state(),
-            "color": fake.safe_color()
+            "color": fake.safe_color_name()
         }
 
         d = Doc.create(data=data)
@@ -21,7 +21,7 @@ def insert_fake_data():
 def run_example_query():
 
     print("All the people who like purple")
-    results = Doc.select().query(Doc.data["color'] == "purple")
+    results = Doc.select().where(Doc.data["color"] == "purple")
     for d in results:
         print("%s %s" % (d.id, d.data))
 

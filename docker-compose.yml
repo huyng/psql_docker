@@ -1,10 +1,10 @@
-main:
+shell:
     build: .
     command: /bin/bash
     environment:
-        - DBNAME:MyDB
-        - DBHOST:pgdb
-        - DBUSER:postgres
+        - DBNAME=mydb
+        - DBHOST=pgdb
+        - DBUSER=postgres
     links:
         - pgdb
     volumes:

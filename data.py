@@ -4,7 +4,7 @@ from playhouse.postgres_ext import Model, PostgresqlExtDatabase, JSONField
 DB_NAME = os.environ["DBNAME"]
 DB_HOST = os.environ["DBHOST"]
 DB_USER = os.environ["DBUSER"]
-DB = PostgresqlExtDatabase(db_name, host=db_host, user=db_user)
+DB = PostgresqlExtDatabase(DB_NAME, host=DB_HOST, user=DB_USER)
 
 class Doc(Model):
    data = JSONField() 
