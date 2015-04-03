@@ -1,0 +1,14 @@
+main:
+    build: .
+    command: /bin/bash
+    environment:
+        - DBNAME:MyDB
+        - DBHOST:pgdb
+        - DBUSER:postgres
+    links:
+        - pgdb
+    volumes:
+        - .:/src
+
+pgdb:
+    image: postgres:latest

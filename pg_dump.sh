@@ -1,0 +1,1 @@
+psql -U postgres -h $DBHOST -d $DBNAME -f backup.sql
