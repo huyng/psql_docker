@@ -3,7 +3,6 @@ Docker + Postgres + Python for fast data exploration and prototyping
 ### Setup
 
 ```
-
 # get docker-compose
 pip install -U docker-compose
 
